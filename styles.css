@@ -54,7 +54,8 @@ ul {
 
 .nav__link .nav__link--anchor:hover {
     color: #6415ff;
-    text-decoration: underline #6415ff;
+    text-decoration: underline #6415ff;    
+    text-underline-offset: 10px;
 }
 
 .logo {
@@ -100,15 +101,89 @@ ul {
     width: 40%;
 }
 
+.header__lefside--para {
+    margin: 32px 0;
+}
+
+.header__mail-registration--input {
+    display: flex;
+    position: relative;
+    display: inline-block;
+}
+
+.header__input {
+    width: 100%;
+    padding: 20px 192px 20px 32px;
+    border-radius: 99px;
+    font-weight: 500;
+    border: 2px solid gray;
+    opacity: 0.5;
+}
+
+.header__input:hover {
+    opacity: 1;
+    color: gray;
+    transition: all 300ms ease;
+}
+
+.btn__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    background-color: #6415FF;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 8px 8px 8px 0;
+    padding: 16px 0;
+    border-radius: 9999px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    width: 160px;
+}
+
+.btn__header:hover {
+    background-color: #3c0d99;
+    cursor: pointer;
+}
+
+.header__lefside-down--container {
+    margin: 80px 0 0;
+}
+
+.header__description-customer--para {
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.header__leftside--illustration {
+    width: 100%;
+    height: 27px;
+    margin: 16px 0 0;
+    padding: 0 64px 0 0;
+    opacity: 0.5;
+}
+
 .header__rightside {
     width: 60%;
 }
 
 .header__title--description {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
+}
+
+.header__rightside--figure {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header__rightside--illustration {
     width: 100%;
+    max-width: 512px;
 }
