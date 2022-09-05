@@ -94,7 +94,9 @@ ul {
 
 .header__description {
     display: flex;
+    flex-direction: row;
     padding: 96px;
+    width: 100%;
 }
 
 .header__leftside {
@@ -117,13 +119,13 @@ ul {
     border-radius: 99px;
     font-weight: 500;
     border: 2px solid gray;
-    opacity: 0.5;
+    opacity: 0.5;    
+    transition: all 300ms ease;
 }
 
 .header__input:hover {
     opacity: 1;
     color: gray;
-    transition: all 300ms ease;
 }
 
 .btn__header {
@@ -171,6 +173,10 @@ ul {
 
 .header__rightside {
     width: 60%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header__title--description {
@@ -186,4 +192,51 @@ ul {
 .header__rightside--illustration {
     width: 100%;
     max-width: 512px;
+}
+
+/* FEATURES*/
+
+.container {
+    padding: 80px 0;
+}
+
+.feature__title--description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.feature__first-title--description {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.feature__second-title--description {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.features__para {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.625;
+    color: #7c8ba1;
+    margin: 16px 0 0;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    width: calc(100%/3);
+    margin: 0 16px;
+    padding: 32px 8px;
 }
