@@ -103,7 +103,7 @@ header {
 .header__description {
     display: flex;
     flex-direction: row;
-    padding: 96px;
+    padding-top: 96px;
     width: 100%;
 }
 
@@ -121,19 +121,25 @@ header {
     display: inline-block;
 }
 
+.header__input:focus {
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    border-color: #6415ff;
+}
+
 .header__input {
     width: 100%;
     padding: 20px 192px 20px 32px;
-    border-radius: 99px;
+    border-radius: 50px;
     font-weight: 500;
-    border: 2px solid gray;
-    opacity: 0.5;    
+    border: 2px solid #e5e7eb;
+    transition-property: border-color;
+    transition-duration: 300ms;
     transition: all 300ms ease;
 }
 
 .header__input:hover {
-    opacity: 1;
-    color: gray;
+    border-color: rgb(160, 174, 192);
 }
 
 .btn__header {
@@ -174,8 +180,8 @@ header {
 .header__leftside--illustration {
     width: 100%;
     height: 27px;
-    margin: 16px 0 0;
-    padding: 0 64px 0 0;
+    margin-top: 16px;
+    padding-right: 128px;
     opacity: 0.5;
 }
 
@@ -199,7 +205,7 @@ header {
 
 .header__rightside--illustration {
     width: 100%;
-    max-width: 512px;
+    max-width: 100%;
 }
 
 /* FEATURES*/
@@ -438,6 +444,7 @@ header {
     font-size: 20px;
     font-weight: 700;
     color: #243E63;
+    margin-left: 16px;
 }
 
 .value__para--description {
@@ -453,6 +460,25 @@ header {
 
 .value__professionalism {
     margin-top: 32px;
+}
+
+.value__subcontainers {
+    display: flex;
+    align-items: center;
+}
+
+.value__dollar {
+    color: rgb(39, 103, 73);
+    background-color: rgb(154, 230, 180);
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.value__case {
+    color: rgb(155, 44, 44);
+    background-color: rgb(254, 178, 178);
+    border-radius: 50px;
+    padding: 8px;
 }
 
 .values__btn {
@@ -479,6 +505,10 @@ header {
 }
 
 /* PRICING */
+
+.pricing__row {
+    padding: 96px 0;
+}
 
 .pricing__description {
     text-align: center;
@@ -643,7 +673,16 @@ header {
     border-radius: 99px;
     padding: 16px 32px;
     cursor: pointer;
+    transition: transform 300ms ease, box-shadow 300ms ease;
 }
+
+.plan__btn:hover,
+.plan__btn--red:hover,
+.plan__btn--white:hover {
+    transform: translate(2px, -2px);
+    box-shadow: 0px 5px 10px rgba(70, 70, 70, 0.4)
+}
+
 
 .plan__btn,
 .plan__btn--red {
