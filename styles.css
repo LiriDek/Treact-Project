@@ -683,6 +683,10 @@ header {
     box-shadow: 0px 5px 10px rgba(70, 70, 70, 0.4)
 }
 
+.plan__btn--white:hover {
+    background-color: #d3dbe0;
+}
+
 
 .plan__btn,
 .plan__btn--red {
