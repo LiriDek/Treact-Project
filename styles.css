@@ -723,6 +723,11 @@ header {
     padding-left: 64px;
 }
 
+.testi__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .testi__title--description {
     color: #243e63;
     font-size: 48px;
@@ -828,4 +833,58 @@ blockquote {
     margin: 12px 0;
     border-right: 1px #a0aec0 solid;
     opacity: 0.25;
+}
+
+/* FAQS */
+
+.faqs__row {
+    padding: 96px 0;
+}
+
+.faqs__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.faqs__title--description {
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #243E63;
+}
+
+.faqs__top--para {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.625;
+    margin-top: 24px;
+}
+
+.faqs__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 16px 40px;
+    border-radius: 8px;
+    background-color: #edf2f7;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.faqs__question:hover {
+    background-color: #e2e8f0;
+}
+
+.faqs__bottom--question {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2d3748;
 }
