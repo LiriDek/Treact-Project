@@ -54,10 +54,19 @@ header {
     margin: 0 24px;
 }
 
-.nav__link--anchor {
+.nav__link--anchor,
+.nav__link--anchor3 {
     color: #243E63;
     font-size: 14px;
     font-weight: bold;
+}
+
+.nav__link--anchor {
+    cursor: not-allowed;
+}
+
+.nav__link--anchor:not(.nav__link--click) {
+    cursor: not-allowed;
 }
 
 .nav__link .nav__link--anchor:hover {
@@ -92,6 +101,7 @@ header {
     background-color: #6415FF;
     font-weight: bold;
     color: #fff;
+    cursor: not-allowed;
 }
 
 .nav__link--signup:hover {
@@ -164,7 +174,7 @@ header {
 
 .btn__header:hover {
     background-color: #3c0d99;
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 .header__lefside-down--container {
@@ -326,10 +336,12 @@ header {
     margin: 32px 0 0;
     padding: 12px 32px;
     width: 150px;
+    
 }
 
 .quality__btn:hover {
     background-color: #5011cc;
+    cursor: not-allowed;
 }
 
 .quality__rightside {
@@ -494,6 +506,7 @@ header {
 
 .values__btn:hover {
     background-color: #5011cc;
+    cursor: not-allowed;
 }
 
 .values__rightside {
@@ -680,7 +693,8 @@ header {
 .plan__btn--red:hover,
 .plan__btn--white:hover {
     transform: translate(2px, -2px);
-    box-shadow: 0px 5px 10px rgba(70, 70, 70, 0.4)
+    box-shadow: 0px 5px 10px rgba(70, 70, 70, 0.4);
+    cursor: not-allowed;
 }
 
 .plan__btn--white:hover {
@@ -821,6 +835,7 @@ blockquote {
 .testi__left--btn:hover,
 .testi__right--btn:hover {
     background-color: #e2e8f0;
+    cursor: not-allowed;
 }
 
 .testi__arrow {
@@ -881,6 +896,7 @@ blockquote {
 
 .faqs__question:hover {
     background-color: #e2e8f0;
+    cursor: not-allowed;
 }
 
 .faqs__bottom--question {
@@ -950,11 +966,13 @@ blockquote {
 
 .subscribe__left--btn:hover {
     background-color: #e53e3e;
+    cursor: not-allowed;
 }
 
 .subscribe__right--btn:hover {
     background-color: #fff;
     color: #6415ff;
+    cursor: not-allowed;
 }
 
 /* FOOTER */
@@ -992,6 +1010,7 @@ blockquote {
 
 .footer__link {
     color: #F7FAFC;
+    cursor: not-allowed;
 }
 
 .footer__link:hover {
@@ -1009,9 +1028,10 @@ blockquote {
     justify-content: space-between;
 }
 
-.footer__logo--container {
+.footer__bottom--link {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer__logo--illustration {
@@ -1047,4 +1067,9 @@ blockquote {
     color: black;
     background-color: #F7FAFC;
     border-radius: 50px;
+    cursor: not-allowed;
+}
+
+.footer__social-media:hover {
+    background-color: #c4ccd8;
 }
