@@ -170,8 +170,10 @@ header {
 
 .header__description {
     display: flex;
-    flex-direction: row;
     width: 100%;
+    padding-top: 96px;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__leftside {
@@ -263,7 +265,7 @@ header {
 }
 
 .header__title--description {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
 }
 
@@ -1344,6 +1346,10 @@ blockquote {
 
     .header__leftside {
         padding: 21px 0;
+    }
+
+    .header__description {
+        padding-top: 0px;
     }
 
     .header__lefside--para {
