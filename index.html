@@ -26,6 +26,22 @@
                     <li class="nav__link"><a class="nav__link--anchor"href="#">Login</a></li>
                     <li class="nav__link"><a class="nav__link--signup" href="#">Sign Up</a></li>
                 </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="nav__link"><a class="nav__link--anchor" href="#">About</a></li>
+                        <li class="nav__link"><a class="nav__link--anchor" href="#">Blog</a></li>
+                        <li class="nav__link"><a class="nav__link--anchor3" href="#pricing">Pricing</a></li>
+                        <li class="nav__link"><a class="nav__link--anchor" href="mailto:@gmail.com">Contact Us</a></li>
+                        <li class="nav__link"><a class="nav__link--anchor" href="#">Login</a></li>
+                        <li class="nav__link"><a class="nav__link--signup" href="#">Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         
@@ -496,7 +512,7 @@
                                 <li class="footer__links"><a href="#" class="footer__link">Onboarding</a></li>
                             </ul>
                         </div>
-                        <div class="footer_links--container">
+                        <div class="footer_links--container footer__legal">
                             <h5 class="footer__title">LEGAL</h5>
                             <ul class="footer__list">
                                 <li class="footer__links"><a href="#" class="footer__link">GDPR</a></li>
