@@ -1362,6 +1362,14 @@ blockquote {
         text-align: center;
     }
 
+    .service {
+        width: 100%;
+    }
+
+    .service__description {
+        margin-left: 0;
+    }
+
     .quality__row,
     .values__row {
         flex-direction: column-reverse;
@@ -1384,6 +1392,10 @@ blockquote {
     .values__leftisde {
         width: 100%;
         text-align: center;
+    }
+
+    .started__rightside {
+        padding-left: 0;
     }
 
     .rightside__container--description,
