@@ -12,10 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    padding: 32px 0 0 0;
-}
-
 .row {
     width: 100%;
     max-width: 1200px;
@@ -38,12 +34,26 @@ header {
     height: calc(100vh - 80px);
 }
 
+.header__description,
+.container,
+.quality__row,
+.started__row,
+.values__row,
+.pricing__row,
+.testi__row,
+.faqs__row,
+.subscribe__container {
+    padding: 96px 32px;
+}
+
+
 /* NAVIGATOR */
 
 .nav__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 32px 32px;
 }
 
 .nav__link--list {
@@ -122,6 +132,8 @@ header {
 }
 
 .header__lefside--para {
+    font-size: 16px;
+    color: #243E63;
     margin: 32px 0;
 }
 
@@ -220,11 +232,6 @@ header {
 
 /* FEATURES*/
 
-.container {
-    padding: 80px 0;
-    margin: 0 33px;
-}
-
 .feature__title--description {
     display: flex;
     flex-direction: column;
@@ -242,6 +249,7 @@ header {
 .feature__second-title--description {
     font-size: 48px;
     font-weight: 900;
+    color: #243e63;
 }
 
 .features__para {
@@ -296,7 +304,6 @@ header {
 
 .quality__row {
     display: flex;
-    padding: 96px 0;
 }
 
 .quality__leftside {
@@ -356,7 +363,6 @@ header {
 
 .started__row {
     display: flex;
-    padding: 96px 0;
 }
 
 .started__leftside {
@@ -417,8 +423,7 @@ header {
 /* VALUES */
 
 .values__row {
-    display: flex;    
-    padding: 96px 0;
+    display: flex;
 }
 
 .values__leftisde {
@@ -519,10 +524,6 @@ header {
 
 /* PRICING */
 
-.pricing__row {
-    padding: 96px 0;
-}
-
 .pricing__description {
     text-align: center;
 }
@@ -558,7 +559,7 @@ header {
     align-items: center;
     flex-direction: column;
     border: 1px solid #e5e7eb;
-    border-radius: 4px;
+    border-radius: 8px;
     position: relative;
     margin: 64px 32px 0 0;
 }
@@ -720,7 +721,6 @@ header {
 .testi__row {
     display: flex;
     flex-wrap: wrap;
-    padding: 96px 0;
     width: 100%;
 }
 
@@ -852,10 +852,6 @@ blockquote {
 
 /* FAQS */
 
-.faqs__row {
-    padding: 96px 0;
-}
-
 .faqs__top {
     display: flex;
     flex-direction: column;
@@ -907,8 +903,7 @@ blockquote {
 
 /* SUBSCRIBE */
 
-.subscribe__container {    
-    padding: 96px 0;
+.subscribe__container {
     margin: 0 107px;
 }
 
@@ -982,16 +977,18 @@ blockquote {
 }
 
 .footer__container---all {
-    padding: 0 50px 48px 50px;
+    padding: 48px 50px 48px 50px;
 }
 
 .footer__top {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .footer_links--container {
     margin-top: 48px;
+    padding: 0 16px;
 }
 
 .footer__title {
@@ -1072,4 +1069,337 @@ blockquote {
 
 .footer__social-media:hover {
     background-color: #c4ccd8;
+}
+
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 861px) {
+
+    .nav__link--list {
+        display: none;
+    }
+
+    .header__description,
+    .plans,
+    .subscribe__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .header__leftside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header__leftside--illustration {
+        padding: 0 50px;
+    }
+
+    .header__rightside {
+        margin-top: 48px;
+    }
+
+
+    .header__title--description {
+        font-size: 30px;
+    }
+
+    .service {
+        width: calc(100%/2);
+    }
+
+    .container,
+    .quality__row,
+    .started__row,
+    .values__row,
+    .pricing__row,
+    .testi__row {
+        padding: 96px 32px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .quality__leftside {
+        padding: 0;
+        margin-right: 48px;
+    }
+
+    .quality__rightside {
+        display: flex;
+        align-items: center;
+    }
+
+    .feature__second-title--description,
+    .quality__title--description,
+    .started__title--description,
+    .values_titles--description,
+    .pricing__title--description,
+    .testi__title--description,
+    .faqs__title--description {
+        font-size: 36px;
+    }
+
+    .features__para,
+    .quality__para--description,
+    .values__para,
+    .pricing__para--description,
+    .testi__para__description,
+    .faqs__top--para {
+        font-size: 16px;
+    }
+
+    .started__lefside,
+    .values__rightside,
+    .testi__left {
+        display: flex;
+        align-items: center;
+    }
+
+    .values__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan {
+        padding: 8px 32px 0;
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .plan__bottom {
+        width: 100%;
+        padding: 32px;
+    }
+
+
+    .plan__bottom,
+    .plan__btn,
+    .plan__btn--red,
+    .plan__btn--white {
+        width: 100%;
+    }
+
+    .faqs__bottom--question {
+        font-size: 18px;
+    }
+
+    .subscribe__title {
+        text-align: center;
+    }
+
+    .subscribe__buttons {
+        margin-top: 24px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .footer__top {
+        justify-content: space-between;
+    }
+}
+
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+
+@media (max-width: 550px) {
+
+    .header__description,
+    .container,
+    .quality__row,
+    .started__row,
+    .values__row,
+    .pricing__row,
+    .testi__row,
+    .faqs__row,
+    .subscribe__container{
+        padding: 80px 32px;
+    }
+
+    .header__leftside {
+        text-align: center;
+    }
+
+    .header__leftside--top,
+    .services,
+    .service,
+    .quality__row,
+    .started__row,
+    .started__rightside,
+    .number__containers,
+    .values__row,
+    .value__affordable,
+    .value__professionalism,
+    .pricing__row,
+    .testi__row,
+    .testi__identity--container,
+    .testi__bottom--container,
+    .faqs__top,
+    .subscribe__description,
+    .subscribe__buttons,
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+    }
+
+    .header__mail-registration--input,
+    .header__leftside,
+    .btn__header,
+    .header__rightside,
+    .header__rightside--figure,
+    .quality__leftside,
+    .quality__rightside,
+    .values__rightside,
+    .plans,
+    .plan,
+    .plan__btn,
+    .plan__btn--white,
+    .plan__btn--red,
+    .testi__left {
+        width: 100%;
+    }
+
+    .btn__header {
+        position: static;
+    }
+
+    .header__leftside--illustration {
+        padding: 0 40px;
+    }
+
+    .header__rightside--figure,
+    .faqs__bottom {
+        margin-top: 48px;
+    }
+
+    .service,
+    .service__img {
+        text-align: center;
+    }
+
+    .quality__row,
+    .values__row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .quality__leftside,
+    .values__leftisde,
+    .plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 64px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .started__rightside,
+    .values__leftisde {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightside__container--description,
+    .para__description {
+        margin: 12px 0 0 0 ;
+    }
+
+    .value__affordable {
+        margin-right: 0;
+    }
+
+    .plans {
+        padding: 0 32px;;
+    }
+
+    .testi__right {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 64px;
+        width: 100%;
+    }
+
+    blockquote {
+        margin-bottom: 32px;
+    }
+
+    .testi__stars {
+        display: block;
+    }
+
+    .testi__name--container {
+        margin: 8px 0 0;
+    }
+
+    .testi__arrows--switcher,
+    .footer__para--description,
+    .footer__social-medias {
+        margin-top: 32px;
+    }
+
+    .subscribe__container {
+        margin: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .subscribe__title {
+        padding: 0;
+        font-size: 24px;
+    }
+
+    .subscribe__buttons,
+    .footer__container---all {
+        padding: 0;
+    }
+
+    .subscribe__left--btn {
+        margin-right: 0;
+    }
+
+    .subscribe__right--btn {
+        margin-top: 16px;
+    }
+
+    .subscribe__container {
+        margin-bottom: 80px;
+    }
+
+    .footer__container {
+        padding: 50px 32px;
+        width: 100%;
+    }
+
+    .footer__top {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer__link {
+        font-size: 14px;
+    }
+
+    .footer__para--description {
+        font-size: 16px;
+    }
 }
